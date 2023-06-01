@@ -1,0 +1,205 @@
+body {
+    background-color: rgba(0, 0, 0, 0.823);
+}
+
+.mytitle {
+    width: 1200px;
+    height: 150px;
+    margin: 50px auto auto auto;
+    text-align: center;
+    color: rgb(48, 45, 203);
+    font-size: 50px;
+    text-shadow: 0 0 7px #7ce916, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 30px #0fa, 0 0 50px #0fa, 0 0 100px#0fa;
+    ;
+
+}
+
+.search {
+    width: 500px;
+    height: 50px;
+    margin: 10px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    background-color: rgb(78, 51, 231);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.search>input {
+    width: 250px;
+    height: 30px;
+    border: 5px;
+    margin: auto auto auto auto;
+    border-radius: 3px;
+
+
+}
+
+.search>label {
+    margin: auto auto auto auto;
+
+}
+
+.search>button {
+    width: 60px;
+    height: 32px;
+    margin: auto auto auto auto;
+    border-radius: 3px;
+    background-color: rgb(48, 45, 203);
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.search>button:hover{
+    border: 3px solid gray;
+    box-shadow: 3px gray;
+}
+
+
+
+.containar {
+    background-color: rgba(160, 103, 173, 0.407);
+    width: 1300px;
+    margin: 20px auto 100px auto;
+    padding-bottom: 100px;
+}
+
+.gridbox {
+    width: 1000px;
+    height: 40px;
+    background-color: blue;
+    margin: 30px 100px 0px auto;
+}
+
+.grid1 {
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
+
+.items {
+    /* 그리드를 사용해서 4열 5행의 레이아웃 설정 */
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-rows: 320px 320px 320px 320px 320px;
+    margin: auto 30px 50px 30px;
+    /* 그리드 요소들 사이에 빈칸 만들기 */
+    grid-gap: 100px 30px;
+}
+
+.item:hover {
+    transform: scale(1.05)
+}
+
+.movieposter {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.rank {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 2px gray;
+}
+
+
+
+
+
+.item {
+    width: 280px;
+    height: 350px;
+    margin: 50px 20px auto 20px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4)
+}
+
+.comment {
+    width: 250px;
+    height: 330px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: start;
+    padding: 15px;
+    font-size: 13px;
+    padding-bottom: 0.4em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 넘치는 텍스트는 생략함 */
+    opacity: 0;
+    /* 영화설명 마우스오버 이벤트 마우스가 안올라가면 숨겨짐*/
+    /* opacity 속성을 사용해서 완전히 투명하게 만듦 */
+    /* opacity 속성값은 최소 0.0~1.0 */
+    text-transform: lowercase;
+}
+
+.item:hover .comment {
+    /* 마우스오버 이벤트가 발생하면 불투명한 영역이 나오도록 만듦 */
+    opacity: 1;
+}
+
+/* .item .comment {
+	color: #fff;
+	position: absolute; left: 0; bottom: 0;
+	background: rgba(0,0,0,0.5);
+	width: 280px;
+    height: 500px;
+	
+	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 0.35s ease-in-out;
+} */
+
+.vote_average {
+    width: 100%;
+    height: 20px;
+    margin: auto 20px 10px 20px
+}
+
+.title {
+    width: 280px;
+    height: 20px;
+    margin: 10px 20px 10px 20px;
+    font-size: 15px;
+    float: left;
+    font-weight: bold;
+
+}
+
+.star {
+    width: 30%;
+    margin: 0px 20px 10px 20px;
+
+}

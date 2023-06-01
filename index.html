@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2/index.css" />
+    <title>TMDB 인기영화 콜렉션</title>
+
+
+
+
+
+</head>
+<style>
+
+</style>
+
+<body onload="load()">
+    <header class="mytitle">
+        <h1>INTRO MOVIE</h1>
+    </header>
+    <form class="search" onsubmit="return false;">
+        <!-- onsumit을 false로 받아서 input박스 안에서 enter키 입력시 새로고침 되는걸 막아줌 -->
+        <label>영화 검색</label>
+        <input type="text" id="searchinput" autofocus placeholder="영화 제목을 검색해 보세요">
+        <button type="submit" id="searchbtn" onclick="search()">검색</button>
+    </form>
+    <div class="containar" id="containar">
+        <div class="items" id="items">
+
+        </div>
+    </div>
+        <!-- type="" / src=""를 이용해서 파일끼리 연결 -->
+        <script type="text/javascript" src="./2/index.js"></script>
+        <script type="text/javascript" src="./2/search.js"></script>
+        <script type="text/javascript" src="./2/index.css"></script>
+</body>
+
+</html>
